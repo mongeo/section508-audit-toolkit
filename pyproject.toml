@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "section508-audit-toolkit"
+version = "1.0.0"
+description = "Map axe-core findings to WCAG 2.2, Section 508, and DHS Trusted Tester test IDs"
+authors = [{name = "Geoffrey Montague"}]
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = ["playwright>=1.40"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+a508 = "a508.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+a508 = ["data/*.json", "vendor/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["browser: needs Chromium installed via `playwright install chromium`"]

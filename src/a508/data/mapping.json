@@ -1,0 +1,30 @@
+{
+  "_note": "Lookup tables from WCAG success criteria to Section 508 and DHS Trusted Tester test IDs. Check the TT IDs against the DHS Trusted Tester Test Process version you certify under, and edit as needed.",
+  "wcag": {
+    "1.1.1": {"name": "Non-text Content", "level": "A", "tt": ["6.A"]},
+    "1.3.1": {"name": "Info and Relationships", "level": "A", "tt": ["9.A", "12.A", "12.B", "13.A"]},
+    "1.3.5": {"name": "Identify Input Purpose", "level": "AA", "tt": ["9.E"]},
+    "1.4.1": {"name": "Use of Color", "level": "A", "tt": ["7.A"]},
+    "1.4.3": {"name": "Contrast (Minimum)", "level": "AA", "tt": ["7.C"]},
+    "1.4.4": {"name": "Resize Text", "level": "AA", "tt": ["14.A"]},
+    "1.4.12": {"name": "Text Spacing", "level": "AA", "tt": ["14.C"]},
+    "2.1.1": {"name": "Keyboard", "level": "A", "tt": ["4.A"]},
+    "2.2.1": {"name": "Timing Adjustable", "level": "A", "tt": ["8.A"]},
+    "2.2.2": {"name": "Pause, Stop, Hide", "level": "A", "tt": ["8.B"]},
+    "2.4.1": {"name": "Bypass Blocks", "level": "A", "tt": ["12.C"]},
+    "2.4.2": {"name": "Page Titled", "level": "A", "tt": ["10.A"]},
+    "2.4.3": {"name": "Focus Order", "level": "A", "tt": ["4.E"]},
+    "2.4.4": {"name": "Link Purpose (In Context)", "level": "A", "tt": ["10.B"]},
+    "2.4.7": {"name": "Focus Visible", "level": "AA", "tt": ["4.D"]},
+    "2.5.8": {"name": "Target Size (Minimum)", "level": "AA", "tt": [], "wcag22_only": true},
+    "3.1.1": {"name": "Language of Page", "level": "A", "tt": ["11.A"]},
+    "3.1.2": {"name": "Language of Parts", "level": "AA", "tt": ["11.B"]},
+    "3.3.2": {"name": "Labels or Instructions", "level": "A", "tt": ["9.B"]},
+    "4.1.1": {"name": "Parsing (obsolete in WCAG 2.2)", "level": "A", "tt": []},
+    "4.1.2": {"name": "Name, Role, Value", "level": "A", "tt": ["5.C", "9.A"]}
+  },
+  "section508": {
+    "A": "Section 508: 36 CFR 1194 Appendix C, E205.4 / 501.1 (WCAG 2.0 Level A, incorporated by reference)",
+    "AA": "Section 508: 36 CFR 1194 Appendix C, E205.4 / 501.1 (WCAG 2.0 Level AA, incorporated by reference)"
+  }
+}
